@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods Example</title>
+</head>
+<body>
+
+    <h1>String Methods Example</h1>
+
+    <script>
+        // Sample string
+        var originalString = "Hello, World!";
+
+        // String length
+        document.write("<p>String Length: " + originalString.length + "</p>");
+
+        // String slice()
+        var slicedString = originalString.slice(0, 5);
+        document.write("<p>Slice(0, 5): " + slicedString + "</p>");
+
+        // String substring()
+        var substring = originalString.substring(7, 12);
+        document.write("<p>Substring(7, 12): " + substring + "</p>");
+
+        // String substr()
+        var substr = originalString.substr(7, 5);
+        document.write("<p>Substr(7, 5): " + substr + "</p>");
+
+        // String replaceAll()
+        var replacedString = originalString.replaceAll('l', 'X');
+        document.write("<p>ReplaceAll('l', 'X'): " + replacedString + "</p>");
+
+        // String toUpperCase()
+        document.write("<p>UpperCase: " + originalString.toUpperCase() + "</p>");
+
+        // String toLowerCase()
+        document.write("<p>LowerCase: " + originalString.toLowerCase() + "</p>");
+
+        // String trimStart() and trimEnd()
+        var stringWithSpaces = "   Trim Me   ";
+        document.write("<p>TrimStart: " + stringWithSpaces.trimStart() + "</p>");
+        document.write("<p>TrimEnd: " + stringWithSpaces.trimEnd() + "</p>");
+
+        // String padStart() and padEnd()
+        var paddedString = "7";
+        document.write("<p>PadStart(3, '0'): " + paddedString.padStart(3, '0') + "</p>");
+        document.write("<p>PadEnd(3, '0'): " + paddedString.padEnd(3, '0') + "</p>");
+
+        // String charAt() and charCodeAt()
+        document.write("<p>CharAt(1): " + originalString.charAt(1) + "</p>");
+        document.write("<p>CharCodeAt(1): " + originalString.charCodeAt(1) + "</p>");
+
+        // String split()
+        var splitArray = originalString.split(',');
+        document.write("<p>Split(','): " + splitArray + "</p>");
+
+        // String replace()
+        var replacedSubstring = originalString.replace('World', 'Universe');
+        document.write("<p>Replace('World', 'Universe'): " + replacedSubstring + "</p>");
+    </script>
+
+</body>
+</html>

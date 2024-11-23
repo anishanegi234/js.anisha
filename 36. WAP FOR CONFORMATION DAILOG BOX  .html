@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Confirmation Dialog Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button to display a confirmation dialog box</h2>
+
+  <!-- Button that triggers the confirmation dialog box -->
+  <button onclick="displayConfirmation()">Display Confirmation Dialog Box</button>
+
+  <script>
+    // JavaScript function to display a confirmation dialog box
+    function displayConfirmation() {
+      // The confirm() function returns true if the user clicks "OK" and false if the user clicks "Cancel"
+      var userConfirmed = confirm("Do you want to proceed?");
+      
+      if (userConfirmed) {
+        alert("You clicked OK! Proceeding...");
+        // Add your logic for "OK" button here
+      } else {
+        alert("You clicked Cancel. Operation cancelled.");
+        // Add your logic for "Cancel" button here
+      }
+    }
+  </script>
+
+</body>
+</html>

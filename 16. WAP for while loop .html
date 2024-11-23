@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop Example</title>
+    <script>
+        function whileLoopExample() {
+            var count = 1;
+            var result = "";
+
+            while (count <= 5) {
+                result += "Iteration " + count + "<br>";
+                count++;
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>While Loop Example</h1>
+    <button onclick="whileLoopExample()">Run While Loop</button>
+    <div id="output"></div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop Example</title>
+    <script>
+        function doWhileLoopExample() {
+            var count = 1;
+            var result = "";
+
+            do {
+                result += "Iteration " + count + "<br>";
+                count++;
+            } while (count <= 5);
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Do-While Loop Example</h1>
+    <button onclick="doWhileLoopExample()">Run Do-While Loop</button>
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do While Loop Example</title>
+</head>
+<body>
+
+<h2>Do While Loop Example</h2>
+
+<script>
+  // This script asks the user to enter a number greater than 5.
+  // It keeps prompting the user until a valid number is entered.
+
+  let number;
+
+  do {
+      number = parseInt(prompt("Enter a number greater than 5:"));
+  } while (isNaN(number) || number <= 5);
+
+  document.write("You entered: " + number);
+</script>
+
+</body>
+</html>

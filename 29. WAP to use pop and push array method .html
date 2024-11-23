@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Methods Example</title>
+</head>
+<body>
+
+<h2>Array Methods Example</h2>
+
+<script>
+  // Create an array of fruits.
+  let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+  // Display the original array of fruits.
+  document.write("<p>Original Array:</p>");
+  displayArray(fruits);
+
+  // Use the pop() method to remove the last element from the array.
+  let removedFruit = fruits.pop();
+
+  // Display the modified array after popping the last element.
+  document.write("<p>Array after popping the last element:</p>");
+  displayArray(fruits);
+  document.write("<p>Removed Fruit: " + removedFruit + "</p>");
+
+  // Use the push() method to add elements to the end of the array.
+  fruits.push("Grapes", "Pineapple");
+
+  // Display the modified array after pushing new elements.
+  document.write("<p>Array after pushing new elements:</p>");
+  displayArray(fruits);
+
+  // Function to display the elements of an array.
+  function displayArray(arr) {
+    document.write("<ul>");
+    for (let i = 0; i < arr.length; i++) {
+      document.write("<li>" + arr[i] + "</li>");
+    }
+    document.write("</ul>");
+  }
+</script>
+
+</body>
+</html>

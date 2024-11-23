@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement Example</title>
+</head>
+<body>
+
+    <h1>Switch Statement Example</h1>
+
+    <script>
+        // Function to demonstrate switch statement using prompt
+        function demonstrateSwitchStatement() {
+            // Get a user input from the user using prompt
+            var userInput = prompt("Enter a fruit (apple, banana, orange):").toLowerCase();
+
+            // Use switch statement to check different cases
+            switch (userInput) {
+                case "apple":
+                    document.write("<p>You chose an apple.</p>");
+                    break;
+                case "banana":
+                    document.write("<p>You chose a banana.</p>");
+                    break;
+                case "orange":
+                    document.write("<p>You chose an orange.</p>");
+                    break;
+                default:
+                    document.write("<p>Invalid fruit choice.</p>");
+                    break;
+            }
+        }
+
+        // Trigger the function when the page loads
+        demonstrateSwitchStatement();
+    </script>
+
+</body>
+</html>

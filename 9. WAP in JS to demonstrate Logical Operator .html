@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators Example</title>
+</head>
+<body>
+
+    <h1>Logical Operators Example</h1>
+
+    <script>
+        // Function to demonstrate logical operators using prompt
+        function demonstrateLogicalOperators() {
+            // Get two boolean values from the user using prompt
+            var bool1 = prompt("Enter 'true' or 'false' for the first boolean value:") === 'true';
+            var bool2 = prompt("Enter 'true' or 'false' for the second boolean value:") === 'true';
+
+            // Demonstrate logical operators
+            document.write("<p>Logical AND: " + (bool1 && bool2) + "</p>");
+            document.write("<p>Logical OR: " + (bool1 || bool2) + "</p>");
+            document.write("<p>Logical NOT for the first boolean: " + !bool1 + "</p>");
+            document.write("<p>Logical NOT for the second boolean: " + !bool2 + "</p>");
+        }
+
+        // Trigger the function when the page loads
+        demonstrateLogicalOperators();
+    </script>
+
+</body>
+</html>

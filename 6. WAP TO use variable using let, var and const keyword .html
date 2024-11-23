@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Declaration Example</title>
+</head>
+<body>
+
+    <h1>Variable Declaration Example</h1>
+
+    <script>
+        // Declare variables using let, var, and const
+        let letVariable;
+        var varVariable;
+        const constVariable = "This is a constant value";
+
+        // Function to prompt the user for values and assign them to variables
+        function declareVariables() {
+            // Using let
+            letVariable = prompt("Enter a value for the let variable:");
+
+            // Using var
+            varVariable = prompt("Enter a value for the var variable:");
+
+            // Display the constant value
+            document.write("<p>Constant Variable Value: " + constVariable + "</p>");
+
+            // Display the values entered by the user for let and var
+            document.write("<p>let Variable Value: " + letVariable + "</p>");
+            document.write("<p>var Variable Value: " + varVariable + "</p>");
+        }
+
+        // Trigger the function when the page loads
+        declareVariables();
+    </script>
+
+</body>
+</html>

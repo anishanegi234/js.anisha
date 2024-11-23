@@ -1,0 +1,45 @@
++!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Cookie Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button to write a cookie</h2>
+
+  <!-- Button that triggers the writing of a cookie -->
+  <button onclick="writeCookie()">Write Cookie</button>
+
+  <script>
+    // JavaScript function to write a cookie
+    function writeCookie() {
+      // Set the cookie with the desired name, value, and expiration date
+      var cookieName = "exampleCookie";
+      var cookieValue = "Hello, this is a cookie!";
+      
+      // Set expiration date (in days)
+      var expirationDays = 7;
+      var expirationDate = new Date();
+      expirationDate.setDate(expirationDate.getDate() + expirationDays);
+
+      // Format the cookie string
+      var cookieString = `${cookieName}=${encodeURIComponent(cookieValue)};expires=${expirationDate.toUTCString()};path=/`;
+
+      // Write the cookie
+      document.cookie = cookieString;
+
+      alert("Cookie has been written!");
+    }
+  </script>
+
+</body>
+</html>

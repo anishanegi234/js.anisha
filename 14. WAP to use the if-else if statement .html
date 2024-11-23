@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else If Statement Example</title>
+</head>
+<body>
+
+    <h1>If-Else If Statement Example</h1>
+
+    <script>
+        // Function to demonstrate if-else if statement using prompt
+        function demonstrateIfElseIfStatement() {
+            // Get a numeric value from the user using prompt
+            var number = parseFloat(prompt("Enter a number:"));
+
+            // Check if the input is a valid number
+            if (isNaN(number)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            // Use if-else if statement to determine the range of the number
+            if (number > 0) {
+                document.write("<p>The entered number is positive.</p>");
+            } else if (number < 0) {
+                document.write("<p>The entered number is negative.</p>");
+            } else {
+                document.write("<p>The entered number is zero.</p>");
+            }
+        }
+
+        // Trigger the function when the page loads
+        demonstrateIfElseIfStatement();
+    </script>
+
+</body>
+</html>

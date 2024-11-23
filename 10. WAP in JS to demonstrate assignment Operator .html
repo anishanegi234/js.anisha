@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators Example</title>
+</head>
+<body>
+
+    <h1>Assignment Operators Example</h1>
+
+    <script>
+        // Function to demonstrate assignment operators using prompt
+        function demonstrateAssignmentOperators() {
+            // Get a number from the user using prompt
+            var inputValue = parseFloat(prompt("Enter a number:"));
+
+            // Check if the input is a valid number
+            if (isNaN(inputValue)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            // Original value
+            document.write("<p>Original Value: " + inputValue + "</p>");
+
+            // Demonstrate assignment operators
+            inputValue += 5; // Increment by 5
+            document.write("<p>After Increment by 5: " + inputValue + "</p>");
+
+            inputValue -= 3; // Decrement by 3
+            document.write("<p>After Decrement by 3: " + inputValue + "</p>");
+
+            inputValue *= 2; // Multiply by 2
+            document.write("<p>After Multiply by 2: " + inputValue + "</p>");
+
+            inputValue /= 4; // Divide by 4
+            document.write("<p>After Divide by 4: " + inputValue + "</p>");
+        }
+
+        // Trigger the function when the page loads
+        demonstrateAssignmentOperators();
+    </script>
+
+</body>
+</html>

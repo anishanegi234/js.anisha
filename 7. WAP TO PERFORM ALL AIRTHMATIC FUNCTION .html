@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations Example</title>
+</head>
+<body>
+
+    <h1>Arithmetic Operations Example</h1>
+
+    <script>
+        // Function to perform arithmetic operations using prompt
+        function performArithmeticOperations() {
+            // Get two numbers from the user using prompt
+            var num1 = parseFloat(prompt("Enter the first number:"));
+            var num2 = parseFloat(prompt("Enter the second number:"));
+
+            // Check if the inputs are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+
+            // Perform arithmetic operations
+            var sum = num1 + num2;
+            var difference = num1 - num2;
+            var product = num1 * num2;
+            var quotient = num1 / num2;
+
+            // Display the results
+            document.write("<p>Sum: " + sum + "</p>");
+            document.write("<p>Difference: " + difference + "</p>");
+            document.write("<p>Product: " + product + "</p>");
+            document.write("<p>Quotient: " + quotient + "</p>");
+        }
+
+        // Trigger the function when the page loads
+        performArithmeticOperations();
+    </script>
+
+</body>
+</html>

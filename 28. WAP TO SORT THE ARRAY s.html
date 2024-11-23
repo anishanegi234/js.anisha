@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Sorting Example</title>
+<script>
+  function sortArray() {
+    // Assign an array
+    var fruits = ["Orange", "Apple", "Banana", "Mango", "Grapes"];
+    
+    // Sort the array
+    fruits.sort();
+    
+    // Display the sorted array
+    var result = "Sorted Fruits: ";
+    for (var i = 0; i < fruits.length; i++) {
+      result += fruits[i];
+      if (i !== fruits.length - 1) {
+        result += ", "; // Add comma between elements except for the last one
+      }
+    }
+    
+    document.getElementById("sortedArray").innerHTML = result;
+  }
+</script>
+</head>
+<body>
+  <h2>Array Sorting Example</h2>
+  <button onclick="sortArray()">Sort Array</button>
+  <p id="sortedArray"></p>
+</body>
+</html>

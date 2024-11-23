@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For...In Loop Example</title>
+</head>
+<body>
+
+    <h1>For...In Loop Example</h1>
+
+    <script>
+        // Function to demonstrate for...in loop using prompt
+        function demonstrateForInLoop() {
+            // Create an empty object to store key-value pairs
+            var userObject = {};
+
+            // Get key-value pairs from the user using prompt
+            var key;
+            do {
+                key = prompt("Enter a property name (or click 'Cancel' to finish):");
+                if (key !== null) {
+                    var value = prompt("Enter a value for the property '" + key + "':");
+                    userObject[key] = value;
+                }
+            } while (key !== null);
+
+            // Display the properties using for...in loop
+            document.write("<p>Entered Object Properties:</p>");
+            for (var property in userObject) {
+                document.write("<p>" + property + ": " + userObject[property] + "</p>");
+            }
+        }
+
+        // Trigger the function when the page loads
+        demonstrateForInLoop();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Current Date and Time</title>
+</head>
+<body>
+
+<script>
+// Get the current date and time
+const currentDate = new Date();
+
+// Display specific components of the date and time
+alert(`Current Date and Time:
+  Year: ${currentDate.getFullYear()}
+  Month: ${currentDate.getMonth() + 1}  // Note: Months are zero-indexed
+  Date: ${currentDate.getDate()}
+  Day: ${currentDate.getDay()}  // Note: Sunday is 0, Monday is 1, and so on
+  Hours: ${currentDate.getHours()}
+  Minutes: ${currentDate.getMinutes()}
+  Seconds: ${currentDate.getSeconds()}
+  Milliseconds: ${currentDate.getMilliseconds()}
+  Timestamp: ${currentDate.getTime()}  // Milliseconds since January 1, 1970
+`);
+
+// You can also prompt the user for a specific date and time using the prompt method
+let userDateInput = prompt("Enter a date (YYYY-MM-DD):");
+let userTimeInput = prompt("Enter a time (HH:mm:ss):");
+
+// Create a Date object from the user input
+const userDate = new Date(`${userDateInput}T${userTimeInput}`);
+
+// Display specific components of the user-entered date and time
+alert(`User-Entered Date and Time:
+  Year: ${userDate.getFullYear()}
+  Month: ${userDate.getMonth() + 1}
+  Date: ${userDate.getDate()}
+  Day: ${userDate.getDay()}
+  Hours: ${userDate.getHours()}
+  Minutes: ${userDate.getMinutes()}
+  Seconds: ${userDate.getSeconds()}
+  Milliseconds: ${userDate.getMilliseconds()}
+  Timestamp: ${userDate.getTime()}
+`);
+</script>
+
+</body>
+</html>

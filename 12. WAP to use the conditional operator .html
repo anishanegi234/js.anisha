@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Operator Example</title>
+</head>
+<body>
+
+    <h1>Conditional Operator Example</h1>
+
+    <script>
+        // Function to demonstrate conditional operator using prompt
+        function demonstrateConditionalOperator() {
+            // Get a numeric value from the user using prompt
+            var number = parseFloat(prompt("Enter a number:"));
+
+            // Check if the input is a valid number
+            if (isNaN(number)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            // Use conditional operator to determine if the number is positive or negative
+            var result = (number >= 0) ? "positive" : "negative";
+
+            // Display the result
+            document.write("<p>The entered number is " + result + ".</p>");
+        }
+
+        // Trigger the function when the page loads
+        demonstrateConditionalOperator();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable Example</title>
+</head>
+<body>
+
+    <h1>Global Variable Example</h1>
+
+    <script>
+        // Declare a global variable
+        var globalVariable;
+
+        // Function to prompt the user for a value and assign it to the global variable
+        function setGlobalVariable() {
+            globalVariable = prompt("Enter a value for the global variable:");
+        }
+
+        // Trigger the function when the page loads
+        setGlobalVariable();
+
+        // Example usage of the global variable
+        document.write("<p>Global Variable Value: " + globalVariable + "</p>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational Operators Example</title>
+</head>
+<body>
+
+    <h1>Relational Operators Example</h1>
+
+    <script>
+        // Function to demonstrate relational operators using prompt
+        function demonstrateRelationalOperators() {
+            // Get two numbers from the user using prompt
+            var num1 = parseFloat(prompt("Enter the first number:"));
+            var num2 = parseFloat(prompt("Enter the second number:"));
+
+            // Check if the inputs are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+
+            // Demonstrate relational operators
+            document.write("<p>" + num1 + " is equal to " + num2 + ": " + (num1 === num2) + "</p>");
+            document.write("<p>" + num1 + " is not equal to " + num2 + ": " + (num1 !== num2) + "</p>");
+            document.write("<p>" + num1 + " is greater than " + num2 + ": " + (num1 > num2) + "</p>");
+            document.write("<p>" + num1 + " is less than " + num2 + ": " + (num1 < num2) + "</p>");
+            document.write("<p>" + num1 + " is greater than or equal to " + num2 + ": " + (num1 >= num2) + "</p>");
+            document.write("<p>" + num1 + " is less than or equal to " + num2 + ": " + (num1 <= num2) + "</p>");
+        }
+
+        // Trigger the

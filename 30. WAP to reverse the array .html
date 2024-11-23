@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverse Array Example</title>
+<script>
+  function reverseArray() {
+    // Assign an array
+    var fruits = ["Apple", "Banana", "Orange", "Mango", "Grapes"];
+    
+    // Reverse the array
+    fruits.reverse();
+    
+    // Display the reversed array
+    var result = "Reversed Fruits Array: " + fruits.join(", ");
+    
+    document.getElementById("arrayReversal").innerHTML = result;
+  }
+</script>
+</head>
+<body>
+  <h2>Reverse Array Example</h2>
+  <button onclick="reverseArray()">Reverse Array</button>
+  <p id="arrayReversal"></p>
+</body>
+</html>

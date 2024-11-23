@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Cookies Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button to read cookies</h2>
+
+  <!-- Button that triggers the reading of cookies -->
+  <button onclick="readCookies()">Read Cookies</button>
+
+  <script>
+    // JavaScript function to read cookies
+    function readCookies() {
+      // Split the document.cookie string into an array of individual cookies
+      var cookiesArray = document.cookie.split(';');
+
+      // Display each cookie
+      for (var i = 0; i < cookiesArray.length; i++) {
+        var cookie = cookiesArray[i].trim();
+        alert("Cookie " + (i + 1) + ": " + cookie);
+      }
+    }
+  </script>
+
+</body>
+</html>

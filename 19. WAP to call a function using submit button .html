@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Submit Button Example</title>
+</head>
+<body>
+
+    <h1>Function Call with Submit Button Example</h1>
+
+    <!-- Form with a submit button -->
+    <form id="myForm">
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="button" onclick="callFunction()">Submit</button>
+    </form>
+
+    <script>
+        // Function to be called when the submit button is clicked
+        function callFunction() {
+            // Get user input from the prompt
+            var userInput = prompt("You entered: " + document.getElementById('userInput').value);
+
+            // Display the result
+            alert("Function called with input: " + userInput);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Prompt Dialog Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button to display a prompt dialog box</h2>
+
+  <!-- Button that triggers the prompt dialog box -->
+  <button onclick="displayPrompt()">Display Prompt Dialog Box</button>
+
+  <script>
+    // JavaScript function to display a prompt dialog box
+    function displayPrompt() {
+      // The prompt() function takes two arguments: the message and a default value
+      var userInput = prompt("Please enter something:", "Default value");
+      
+      // Check if the user entered something
+      if (userInput !== null) {
+        alert("You entered: " + userInput);
+      } else {
+        alert("You cancelled the prompt.");
+      }
+    }
+  </script>
+
+</body>
+</html>
